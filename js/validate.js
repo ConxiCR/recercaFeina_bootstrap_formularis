@@ -16,7 +16,9 @@ function registerValidate() {
 	var inputZip = document.forms["myForm"]["inputZip"];
 	var gridCheck = document.forms["myForm"]["gridCheck"];
 
+	// validate email
 	if(inputEmail.value == "") {
+		inputEmail.style.border = "1px solid red";
 		inputEmail.classList.add("is-invalid");
 		document.getElementById("errorEmail").textContent = "El camp és obligatori";
         acumErrores ++;
@@ -25,32 +27,32 @@ function registerValidate() {
 		document.getElementById("errorEmail").textContent = "L'email no cumpleix el format";
 		acumErrores ++;
 	}
-
+	// validate password
     if(inputPassword.value == "") {
 		inputPassword.classList.add("is-invalid");
 		document.getElementById("errorPassword").textContent = "El camp és obligatori";
 		acumErrores ++;
 	}
-	
+	// validate address
     if(inputAddress.value == "") {
 		inputAddress.classList.add("is-invalid");
 		document.getElementById("errorAddress").textContent = "El camp és obligatori";
 		acumErrores ++;
 	}
-
+	// validate province
     if(inputProvince.value == "") {
 		inputProvince.classList.add("is-invalid");
 		document.getElementById("errorProvince").textContent = "La provincia és obligatoria";
 		acumErrores ++;
 	}
-	
+	// validate city
 	if(inputCity.value == "") {
 		inputCity.classList.add("is-invalid");
 		document.getElementById("errorCity").textContent = "Falta la ciutat";
 		acumErrores ++;
 	}
-	
-	if(inputZip.value == "" || inputZip.length=5) {
+	// validate zip/codi postal
+	if(inputZip.value == "" || inputZip.length == 5) {
 		inputZip.classList.add("is-invalid");
 		document.getElementById("errorZip").textContent = "El camp és obligatori";
 		acumErrores ++;
@@ -60,7 +62,7 @@ function registerValidate() {
 		document.getElementById("errorZip").textContent = "El codi postal no cumpleix el format";
 		acumErrores ++;
 	}
-	
+	//validate gridcheck/política privacitat
 	if(!gridCheck.checked) {
 		gridCheck.classList.add("is-invalid");
 		document.getElementById("errorCheck").textContent = "Acepta les bases";
