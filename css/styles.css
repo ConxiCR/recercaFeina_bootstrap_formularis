@@ -17,14 +17,11 @@ header {
 main{
 	padding: 10rem;
 }
-/*login*/
-#login-form{
-	padding: 5rem;
-}
-/*formulari contacte*/
+/*contacte*/
 #myFormId{
-	padding: 10rem;
+	margin-top: 5em;
 }
+
 /*botó dropdown idioma*/
 .dropdown .btn{
 	overflow: visible;
@@ -98,40 +95,16 @@ ul.navbar-nav li a:hover {
 	}
 
 @media screen and (max-width: 1000px){
-	.container{
-		padding: 0;
-		margin: 0;
-	}
+	
 }
 @media all and (max-width: 600px){
-	.container{
-		padding: 0;
-		margin: 0;
-	}
 	header.mascara h1{
 		font-size: 2em;
 	}
 	
 }
 @media all and (max-width: 450px){
-	.container{
-		padding: 0;
-	}
 	header.mascara h1{
 		font-size: 2em;
 	}
-	.text-login{
-		padding-top: 16rem;
-	}
-	/*login*/
-	#login-form{
-		padding: 0;
-		margin: 0;
-	}
-	/*formulari contacte*/
-	#myFormId{
-		padding: 0;
-		margin:0;
-	}
-}
-
+}	
