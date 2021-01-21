@@ -15,11 +15,8 @@ header {
 	align-items: center;
 }
 main{
-	padding: 10rem;
-}
-/*contacte*/
-#myFormId{
-	margin-top: 5em;
+	margin-top: 15em;
+	padding: 3rem;
 }
 
 /*botó dropdown idioma*/
@@ -41,9 +38,6 @@ ul.navbar-nav li a:hover {
 	background-color: #16a085;
 	}
 /*buscador per fer preguntes*/
-/*.form1{
-	margin-top: 14rem;
-	}*/
 .text-login{
 	display: -ms-flexbox;
 	display: flex;
@@ -92,14 +86,26 @@ ul.navbar-nav li a:hover {
 .carousel-inner h3{
 	font-family:  'Source Sans Pro SemiBold', sans-serif;
 	
-	}
+}
+fieldset{
+	margin-top: 10em;
+}
 
 @media screen and (max-width: 1000px){
-	
+	.carousel-inner h3{
+		margin-top: -15%;
+		padding:0.5em;
+		font-size: 75%;
+	}
 }
 @media all and (max-width: 600px){
 	header.mascara h1{
 		font-size: 2em;
+	}
+	.carousel-inner h3{
+		margin-bottom: -10em;
+		padding: 0.5em;
+		font-size: 75%;
 	}
 	
 }
@@ -107,4 +113,9 @@ ul.navbar-nav li a:hover {
 	header.mascara h1{
 		font-size: 2em;
 	}
+	.carousel-inner h3{
+		margin-top: -5%;
+		font-size: 75%;
+	}
+	
 }	
